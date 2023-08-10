@@ -1,4 +1,4 @@
-package br.com.alura.models;
+package br.com.system.models;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 import com.google.gson.Gson;
 
-import br.com.alura.record.Address;
+import br.com.system.record.Address;
 
 public class ConsultCep {
     public Address findAddress(String cep) {
