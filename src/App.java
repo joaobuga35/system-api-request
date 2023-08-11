@@ -23,8 +23,8 @@ public class App {
             ConsultCep consultaCep = new ConsultCep();
             Address newAddress = consultaCep.findAddress(cep);
             GenerateFile generateJson = new GenerateFile();
-            generateJson.saveJson(newAddress);
             allAddress.add(newAddress);
+            generateJson.saveJson(allAddress);
             System.out.println(newAddress);
         }
 

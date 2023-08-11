@@ -27,6 +27,8 @@ public class ConsultCep {
             return new Gson().fromJson(response.body(), Address.class);
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException("Não consegui obter o endereço a partir desse CEP.");
+        } catch (Exception e) {
+            throw new RuntimeException("Você saiu do buscador!");
         }
     }
 }
